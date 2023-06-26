@@ -12,6 +12,7 @@ The returned dictionary should follow this format:
   'min': [axis1, axis2, flattened],
   'sum': [axis1, axis2, flattened]
 }
+
 If a list containing less than 9 elements is passed into the function, it should raise a ValueError exception with the message: "List must contain nine numbers." The values in the returned dictionary should be lists and not Numpy arrays.
 
 For example, calculate([0,1,2,3,4,5,6,7,8]) should return:
@@ -24,4 +25,5 @@ For example, calculate([0,1,2,3,4,5,6,7,8]) should return:
   'min': [[0, 1, 2], [0, 3, 6], 0],
   'sum': [[9, 12, 15], [3, 12, 21], 36]
 }
+
 The unit tests for this project are in test_module.py.
